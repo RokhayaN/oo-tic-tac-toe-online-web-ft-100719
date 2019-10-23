@@ -21,6 +21,7 @@ def move [index , token]
   @board[token] = index
 end
 def position_taken?
-  if @board[index]
+  if @board[index] != ""
+    
 
 

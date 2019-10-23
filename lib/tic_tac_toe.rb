@@ -18,6 +18,6 @@ class TicTacToe
    user_input.to_i - 1
 end
 def move [index , token]
-  @board.token = index
+  @board[token] = index
 
 

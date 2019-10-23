@@ -41,6 +41,10 @@ def position_taken?
   def turn_count
     @board.count{|square| square != " " }
   end
+  def current_player
+    turn_count.even? ? "X" : "O"
+  end
+  
 
     
 

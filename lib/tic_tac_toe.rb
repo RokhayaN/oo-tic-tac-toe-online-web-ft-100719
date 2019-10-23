@@ -26,8 +26,10 @@ def position_taken?
   def valid_move?
     !position_taken?(index) && index.between?(0,8)
   end
-  def turn
-    move.index.between?()
+  def turn_count
+    @board.count{|square| square != " " }
+  end
+
     
 
 

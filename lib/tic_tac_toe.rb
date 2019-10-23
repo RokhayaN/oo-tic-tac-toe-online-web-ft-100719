@@ -39,7 +39,6 @@ def position_taken?
       turn
     end
     display_board
-  end
   
   def turn_count
     @board.count{|square| square != " " }

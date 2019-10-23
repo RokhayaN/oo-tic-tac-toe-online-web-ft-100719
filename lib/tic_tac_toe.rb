@@ -24,6 +24,7 @@ def position_taken?
   if @board[index] != ""
   end 
   def valid_move?
+    !position_taken?(index) && index.between?(0,8)
     
 
 

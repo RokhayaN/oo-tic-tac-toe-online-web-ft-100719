@@ -74,7 +74,7 @@ def position_taken?
     turn until over?
     puts winner ? "Congratulations #{winner}!" : "Cat's Game!"
   end
-en
+end
 
     
 

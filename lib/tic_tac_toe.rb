@@ -73,7 +73,6 @@ def position_taken?
     if combo = won?
       @board[combo[0]]
     end
-  end
 
   def play
     turn until over?

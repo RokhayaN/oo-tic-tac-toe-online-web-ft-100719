@@ -75,7 +75,9 @@ def position_taken?
 
   def play
     turn until over?
-    puts winner ? "Congratulations #{winner}!" : "Cat's Game!"
+    puts winner ? "Congratulations #{winner}!" : 
+    "Cat's Game!"
+    binding.pry
   end
 end
     

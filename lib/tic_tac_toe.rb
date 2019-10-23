@@ -23,9 +23,11 @@ end
 def position_taken?
   if @board[index] != ""
   end 
+  
   def valid_move?
     !position_taken?(index) && index.between?(0,8)
   end
+  
   def turn
     puts "Please enter a number (1-9):"
     user_input = gets.strip
@@ -38,12 +40,15 @@ def position_taken?
     end
     display_board
   end
+  
   def turn_count
     @board.count{|square| square != " " }
   end
+  
   def current_player
     turn_count.even? ? "X" : "O"
   end
+  
     def won?
     WIN_COMBINATIONS.any? do |combo|
       if position_taken?(combo[0]) && @board[combo[0]] == @board[combo[1]] && @board[combo[1]] == @board[combo[2]]

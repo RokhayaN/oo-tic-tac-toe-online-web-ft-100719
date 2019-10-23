@@ -1,4 +1,4 @@
-require pry
+
 class TicTacToe
   def initialize 
     @board = [" "," "," "," "," "," "," "," "," "]
@@ -78,7 +78,6 @@ def position_taken?
     turn until over?
     puts winner ? "Congratulations #{winner}!" : 
     "Cat's Game!"
-    binding.pry
   end
 end
     
